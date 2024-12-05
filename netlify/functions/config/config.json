@@ -2,7 +2,7 @@
   "url": "https://behavix.netlify.app",
 
   "totalPrizes": 20,
-  "expectedSurveys": 20,
+  "expectedSurveys": 200,
   "expirationMinutes": 30,
   
   "airtableBase": "app8M2ssxYlm1xDJu",
