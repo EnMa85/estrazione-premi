@@ -17,6 +17,9 @@ exports.handler = async function(event) {
         statusCode: 302,
         headers: {
             Location: redirectUrl,
+            'Access-Control-Allow-Origin': '*', // Consenti tutte le origini
+            'Access-Control-Allow-Methods': 'GET, POST, OPTIONS', // Metodi consentiti
+            'Access-Control-Allow-Headers': 'Content-Type, Authorization', // Intestazioni consentite
         },
     };
 };
