@@ -14,7 +14,7 @@ exports.handler = async function(event) {
     const origin = `${protocol}://${host}`;
     // Create destination url
     const pathname = '/tenta-la-fortuna';
-    const redirectUrl = `https://behavix.netlify.app/tenta-la-fortuna`;
+    const redirectUrl = `https://behavix.netlify.app/tenta-la-fortuna?token=${token}`;
     
     return {
         statusCode: 302,
