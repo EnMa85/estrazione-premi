@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(data => {
             if (data.isValid) {
                 removeValidParam();
-                generateToken();d
+                generateToken();
             } else {
                 let message = 'Devi compilare il questionario per partecipare all\'estrazione!';
                 document.getElementById('thanks').innerText = message;

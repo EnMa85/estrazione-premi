@@ -1,4 +1,6 @@
 {
+  "url": "https://behavix.netlify.app",
+
   "totalPrizes": 20,
   "expectedSurveys": 20,
   "expirationMinutes": 30,
