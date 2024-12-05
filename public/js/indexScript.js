@@ -9,7 +9,11 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(data => {
             if (data.isValid) {
                 removeValidParam();
+                console.log('Secret Key:', secretKey);
+                console.log('Generated Token:', token);
                 generateToken();
+                console.log('Secret Key:', secretKey);
+                console.log('Generated Token:', token);
             } else {
                 let message = 'Devi compilare il questionario per partecipare all\'estrazione!';
                 document.getElementById('thanks').innerText = message;
