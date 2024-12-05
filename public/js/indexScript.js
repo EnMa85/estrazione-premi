@@ -9,9 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(data => {
             if (data.isValid) {
                 removeValidParam();
-                console.log('Prima Generated Token');
-                generateToken();
-                console.log('Dopo Generated Token');
+                generateToken();d
             } else {
                 let message = 'Devi compilare il questionario per partecipare all\'estrazione!';
                 document.getElementById('thanks').innerText = message;
