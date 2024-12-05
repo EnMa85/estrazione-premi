@@ -2,6 +2,7 @@
   "totalPrizes": 20,
   "expectedSurveys": 200,
   "expirationMinutes": 30,
+  
   "airtableBase": "app8M2ssxYlm1xDJu",
   "countTable": "PrizeCounter",
   "errorTable": "ErrorLogs",
