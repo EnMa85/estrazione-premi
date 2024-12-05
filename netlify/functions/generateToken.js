@@ -5,6 +5,10 @@ exports.handler = async function(event) {
     const secretKey = process.env.JWT_SECRET_KEY;
     const token = jwt.sign({ isValid: true }, secretKey, { expiresIn: '2m' });
 
+    console.log('Secret Key:', secretKey);
+console.log('Generated Token:', token);
+
+
     // Obtain current url
     const host = event.headers.host;
     const protocol = event.headers['x-forwarded-proto'] || 'http';
@@ -17,9 +21,6 @@ exports.handler = async function(event) {
         statusCode: 302,
         headers: {
             Location: redirectUrl,
-            'Access-Control-Allow-Origin': '*', // Consenti tutte le origini
-            'Access-Control-Allow-Methods': 'GET, POST, OPTIONS', // Metodi consentiti
-            'Access-Control-Allow-Headers': 'Content-Type, Authorization', // Intestazioni consentite
         },
     };
 };
