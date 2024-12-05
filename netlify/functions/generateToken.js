@@ -5,8 +5,7 @@ exports.handler = async function(event) {
     const secretKey = process.env.JWT_SECRET_KEY;
     const token = jwt.sign({ isValid: true }, secretKey, { expiresIn: '2m' });
 
-    console.log('Secret Key:', secretKey);
-console.log('Generated Token:', token);
+    console.log('Dentro Generated Token');
 
 
     // Obtain current url
